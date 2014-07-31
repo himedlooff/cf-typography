@@ -1,11 +1,11 @@
 {
-  "name": "cf-typography",
-  "version": "0.5.11",
-  "description": "Basic typography styling, including heading hierarchy, links, and some handy webfont mixins for Capital Framework.",
+  "name": "cf-core",
+  "version": "0.1.0",
+  "description": "Base styling, including heading hierarchy, links, and some handy webfont mixins for Capital Framework.",
   "keywords": [
     "capital-framework",
     "capital",
-    "typography",
+    "base",
     "less"
   ],
   "authors": [
@@ -14,15 +14,14 @@
       "url": "https://cfpb.github.io/"
     }
   ],
-  "homepage": "https://github.com/cfpb/cf-typography",
+  "homepage": "https://github.com/cfpb/cf-core",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cfpb/cf-typography.git"
+    "url": "https://github.com/cfpb/cf-core.git"
   },
-  "license": "https://github.com/cfpb/cf-typography/blob/gh-pages/TERMS.md",
-  "main": "src/cf-typography.less",
+  "license": "https://github.com/cfpb/cf-core/blob/gh-pages/TERMS.md",
+  "main": "src/cf-core.less",
   "dependencies": {
-    "cf-colors": "git://github.com/cfpb/cf-colors.git",
     "normalize-css": "~3.0.0",
     "normalize-legacy-addon": "git://github.com/cfpb/normalize-legacy-addon.git#0.1.0"
   },

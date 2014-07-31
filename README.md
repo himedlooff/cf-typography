@@ -1,7 +1,7 @@
-# cf-typography
+# cf-core
 
 [![Bower dependency status](https://www.versioneye.com/user/projects/533069907bae4b78ef00000b/badge.png)](https://www.versioneye.com/user/projects/533069907bae4b78ef00000b)
-[![npm dependency status](https://gemnasium.com/cfpb/cf-typography.svg)](https://gemnasium.com/cfpb/cf-typography)
+[![npm dependency status](https://gemnasium.com/cfpb/cf-core.svg)](https://gemnasium.com/cfpb/cf-core)
 
 Basic typography styling, including heading hierarchy, links, and some handy
 webfont mixins.
@@ -12,8 +12,8 @@ a new front end framework developed at the
 If you would like to take advantage of more components or if you're new to
 Capital Framework, we encourage you to [start here](https://cfpb.github.io/capital-framework/).
 
-- [View the docs](https://cfpb.github.io/cf-typography/docs/)
-- [See the raw demo](https://cfpb.github.io/cf-typography/demo/)
+- [View the docs](https://cfpb.github.io/cf-core/docs/)
+- [See the raw demo](https://cfpb.github.io/cf-core/demo/)
 
 (Docs and demo built with the excellent [Topdoc](https://github.com/topcoat/topdoc/).)
 
@@ -23,7 +23,7 @@ Capital Framework, we encourage you to [start here](https://cfpb.github.io/capit
 We welcome your feedback and contributions.
 
 - [Find out about contributing](https://cfpb.github.io/capital-framework/contributing/)
-- [File a bug](https://github.com/cfpb/cf-typography/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
+- [File a bug](https://github.com/cfpb/cf-core/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
 
 
 ## Getting Started

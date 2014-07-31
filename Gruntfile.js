@@ -58,9 +58,6 @@ module.exports = function(grunt) {
       // We'll be inserting it at the top of minified assets.
       banner: grunt.file.read('./node_modules/cf-grunt-config/cfpb-banner.txt'),
     },
-
-    // Define tasks specific to this project here
-
   };
 
 
@@ -88,7 +85,60 @@ module.exports = function(grunt) {
    * loadConfig function with the given path, which is where our external
    * task options get installed by npm.
    */
-  config = extend(true, loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
+  config = extend(loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
+
+  config.concat = { main:{} };
+
+  config.less = {
+    main: {
+      options: {
+        paths: grunt.file.expand('src/**'),
+        sourceMap: true
+      },
+      files: {
+        'docs/static/css/main.css': [
+          'src/cf-core.less'
+        ]
+      }
+    }
+  };
+
+
+  /**
+   * Creates a dynamic topdoc options object.
+   * To add more subtasks add an item to the subtasks array.
+   * For example if you created a new component with the family name of
+   * "my-component" then you could add a new item to the subtasks array called
+   * "my-component" and this function would automatically add a new topdoc
+   * subtask to the topdoc task. You could then run `grunt topdoc:my-component`
+   * to build it out separately or just `grunt topdoc` to run all topdoc tasks.
+   */
+  function dynamicTopdocTasks() {
+    var topdoc = {};
+    var subtasks = [
+      'base',
+      'typography'
+    ];
+    for (var i = 0; i < subtasks.length; i++) {
+      var key = subtasks[i];
+      topdoc[key] = {
+        options: {
+          source: 'docs/static/css/',
+          destination: 'docs/' + key + '/',
+          template: 'node_modules/cf-component-demo/docs/',
+          templateData: {
+            family: 'cf-' + key,
+            description: key + ' for cfgov-refresh.',
+            title: 'cf-core / ' + key + ' docs',
+            repo: '<%= pkg.homepage %>'
+          }
+        }
+      };
+    }
+    return topdoc;
+  }
+
+  config.topdoc = dynamicTopdocTasks();
 
   grunt.initConfig(config);
 
