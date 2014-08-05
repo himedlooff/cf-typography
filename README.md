@@ -3,8 +3,10 @@
 [![Bower dependency status](https://www.versioneye.com/user/projects/533069907bae4b78ef00000b/badge.png)](https://www.versioneye.com/user/projects/533069907bae4b78ef00000b)
 [![npm dependency status](https://gemnasium.com/cfpb/cf-core.svg)](https://gemnasium.com/cfpb/cf-core)
 
-Basic typography styling, including heading hierarchy, links, and some handy
-webfont mixins.
+Core styles for starting a Capital Framework project.
+It includes Less variables, Less mixin utilities and class utilities,
+standard base styling, and typography styles including heading hierarchy, links,
+and some handy webfont mixins.
 This component can be used by itself, but it was made for Capital Framework,
 a new front end framework developed at the
 [Consumer Financial Protection Bureau](https://cfpb.github.io/).
