@@ -1352,6 +1352,161 @@ nav a {
 }</code></pre>
           </div>
         </li>
+        <li id="form-labels" class="demo-component-list_item demo-wrapper">
+          <h1 class="demo-component-list_header">Form labels</h1>
+          <ul class="demo-pattern-list">
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Default label</h3>
+                <ul class="demo_notes">
+                  <li>Warning, this pattern is still under development.</li>
+                </ul>
+              </header>
+              <section>
+<label>I am a form label</label>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;label&gt;I am a form label&lt;/label&gt;</code></pre>
+              </footer>
+            </li>
+          </ul>
+          <div class="demo-pattern-css">
+            <pre class="css"><code data-language="css">label {
+  display: block;
+}</code></pre>
+          </div>
+        </li>
+        <li id="single-line-text-input" class="demo-component-list_item demo-wrapper">
+          <h1 class="demo-component-list_header">Single-line text input</h1>
+          <ul class="demo_notes">
+            <li>Most other text-based inputs extend styles from here as seen in the CSS to the right.</li>
+          </ul>
+          <ul class="demo-pattern-list">
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Default single-line text input</h3>
+                <ul class="demo_notes">
+                  <li>Note that break tag usage is being used for demo purposes only. Please do not use them for visually separating inputs.</li>
+                </ul>
+              </header>
+              <section>
+<input placeholder="placeholder text" type="text" value=""><br><br>
+<input placeholder="placeholder search text" type="search" value=""><br><br>
+<input placeholder="placeholder email text" type="email" value=""><br><br>
+<input placeholder="placeholder url text" type="url" value=""><br><br>
+<input placeholder="placeholder tel text" type="tel" value=""><br><br>
+<input placeholder="placeholder number text" type="number" value="">
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input placeholder=&quot;placeholder text&quot; type=&quot;text&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input placeholder=&quot;placeholder search text&quot; type=&quot;search&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input placeholder=&quot;placeholder email text&quot; type=&quot;email&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input placeholder=&quot;placeholder url text&quot; type=&quot;url&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input placeholder=&quot;placeholder tel text&quot; type=&quot;tel&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input placeholder=&quot;placeholder number text&quot; type=&quot;number&quot; value=&quot;&quot;&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Focused state</h3>
+                <ul class="demo_notes">
+                  <li>Note that break tag usage is being used for demo purposes only. Please do not use them for visually separating inputs.</li>
+                </ul>
+              </header>
+              <section>
+<input class="focus" placeholder="placeholder text" type="text" value=""><br><br>
+<input class="focus" placeholder="placeholder search text" type="search" value=""><br><br>
+<input class="focus" placeholder="placeholder email text" type="email" value=""><br><br>
+<input class="focus" placeholder="placeholder url text" type="url" value=""><br><br>
+<input class="focus" placeholder="placeholder tel text" type="tel" value=""><br><br>
+<input class="focus" placeholder="placeholder number text" type="number" value="">
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder text&quot; type=&quot;text&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder search text&quot; type=&quot;search&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder email text&quot; type=&quot;email&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder url text&quot; type=&quot;url&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder tel text&quot; type=&quot;tel&quot; value=&quot;&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;input class=&quot;focus&quot; placeholder=&quot;placeholder number text&quot; type=&quot;number&quot; value=&quot;&quot;&gt;</code></pre>
+              </footer>
+            </li>
+          </ul>
+          <div class="demo-pattern-css">
+            <pre class="css"><code data-language="css">input[type=&quot;text&quot;],
+input[type=&quot;search&quot;],
+input[type=&quot;email&quot;],
+input[type=&quot;url&quot;],
+input[type=&quot;tel&quot;],
+input[type=&quot;number&quot;],
+textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25em;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid #75787b;
+  border-radius: 0;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+input[type=&quot;text&quot;]:focus,
+input[type=&quot;text&quot;].focus,
+input[type=&quot;search&quot;]:focus,
+input[type=&quot;search&quot;].focus,
+input[type=&quot;email&quot;]:focus,
+input[type=&quot;email&quot;].focus,
+input[type=&quot;url&quot;]:focus,
+input[type=&quot;url&quot;].focus,
+input[type=&quot;tel&quot;]:focus,
+input[type=&quot;tel&quot;].focus,
+input[type=&quot;number&quot;]:focus,
+input[type=&quot;number&quot;].focus,
+textarea:focus,
+textarea.focus {
+  border: 1px solid #0072ce;
+  border-color: #0072ce;
+  outline: 1px solid #0072ce;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}</code></pre>
+          </div>
+        </li>
+        <li id="multiline-textarea" class="demo-component-list_item demo-wrapper">
+          <h1 class="demo-component-list_header">Multiline textarea</h1>
+          <ul class="demo-pattern-list">
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Default multi-line text box</h3>
+              </header>
+              <section>
+<textarea>Example entry</textarea>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea&gt;Example entry&lt;/textarea&gt;</code></pre>
+              </footer>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>Focused multi-line text box</h3>
+              </header>
+              <section>
+<textarea class="focus">Example entry</textarea>
+</section>
+              <footer class="demo-pattern-list_footer">
+                <pre class="html"><code data-language="html">&lt;textarea class=&quot;focus&quot;&gt;Example entry&lt;/textarea&gt;</code></pre>
+              </footer>
+            </li>
+          </ul>
+          <div class="demo-pattern-css">
+            <pre class="css"><code data-language="css">/* NOTE: all textarea styles extend input[type=&quot;text&quot;]. */
+textarea {
+  overflow: auto;
+}</code></pre>
+          </div>
+        </li>
       </ul>
       <footer class="wrapper-footer">
         <h4><a href="https://github.com/cfpb/cf-core">View the repository</a></h4>
