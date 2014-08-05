@@ -15,6 +15,44 @@
       <h1 class="docs-title"><span class="docs-icon">&lt;/&gt;</span> cf-core / base docs
       </h1><a href="https://github.com/cfpb/cf-core" class="docs-repo">view the repository</a>
     </div>
+    <div id="webfonts" class="docs-component">
+      <h2 class="docs-component_header"><span>Webfonts</span></h2>
+      <div class="docs-patterns">
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Licensed webfonts</h3>
+          <footer class="docs-pattern_footer">
+            <ul class="docs-notes">
+              <li>Avenir Next is included via the licensed-fonts.css file. This file contains absolute links to our paid font service. Fonts included this way will only work on CFPB-registered domains.</li>
+              <li>Note that when using Avenir Regular we automatically fix faux italic and bold issues by overriding i, em, b, and strong tags to use the appropriate fonts.</li>
+            </ul>
+          </footer>
+        </div>
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Webfont mixins</h3>
+          <footer class="docs-pattern_footer">
+            <ul class="docs-codenotes">
+              <li>
+                <pre class="docs-code"><code>.webfont-regular()</code></pre>
+              </li>
+              <li>
+                <pre class="docs-code"><code>.webfont-italic()</code></pre>
+              </li>
+              <li>
+                <pre class="docs-code"><code>.webfont-medium()</code></pre>
+              </li>
+              <li>
+                <pre class="docs-code"><code>.webfont-demi()</code></pre>
+              </li>
+            </ul>
+            <ul class="docs-notes">
+              <li>Use these mixins to easily add the Avenir Next font family to your elements.</li>
+              <li>To avoid faux bold and italics in Avenir Next, you must use the font family name for that particular style. So when defining an italic or bold style in Avenir Next you need to use the Avenir Next Italic font family. Use the mixins when setting bold or italic text as they also set the appropriate font-weight and font-style.</li>
+              <li>These mixins also add the appropriate .lt-ie9 overrides. .lt-ie9 overrides are necessary to override font-style and font-weight each time the webfont is used. These overrides are built into the webfont mixins so you get them automatically. Note that this requires you to use conditional classes on the &lt;html&gt; element: https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes.</li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
     <div id="type-hierarchy" class="docs-component">
       <h2 class="docs-component_header"><span>Type hierarchy</span></h2>
       <div class="docs-patterns">
@@ -119,6 +157,152 @@
   font-family: Georgia, &quot;Times New Roman&quot;, serif;
   font-size: 100%;
   line-height: 1.375;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: &quot;AvenirNextLTW01-Regular&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1 em,
+.h1 em,
+h2 em,
+.h2 em,
+h3 em,
+.h3 em,
+h1 i,
+.h1 i,
+h2 i,
+.h2 i,
+h3 i,
+.h3 i {
+  font-family: &quot;AvenirNextLTW01-Italic&quot;, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 h1 em,
+.lt-ie9 .h1 em,
+.lt-ie9 h2 em,
+.lt-ie9 .h2 em,
+.lt-ie9 h3 em,
+.lt-ie9 .h3 em,
+.lt-ie9 h1 i,
+.lt-ie9 .h1 i,
+.lt-ie9 h2 i,
+.lt-ie9 .h2 i,
+.lt-ie9 h3 i,
+.lt-ie9 .h3 i {
+  font-style: normal !important;
+}
+h1 strong,
+.h1 strong,
+h2 strong,
+.h2 strong,
+h3 strong,
+.h3 strong,
+h1 b,
+.h1 b,
+h2 b,
+.h2 b,
+h3 b,
+.h3 b {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 h1 strong,
+.lt-ie9 .h1 strong,
+.lt-ie9 h2 strong,
+.lt-ie9 .h2 strong,
+.lt-ie9 h3 strong,
+.lt-ie9 .h3 strong,
+.lt-ie9 h1 b,
+.lt-ie9 .h1 b,
+.lt-ie9 h2 b,
+.lt-ie9 .h2 b,
+.lt-ie9 h3 b,
+.lt-ie9 .h3 b {
+  font-weight: normal !important;
+}
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.47058824em;
+  font-size: 2.125em;
+  line-height: 1.29411765;
+}
+h2,
+.h2 {
+  margin-top: 0;
+  margin-bottom: 0.30769231em;
+  font-size: 1.625em;
+  line-height: 1.26923077;
+}
+h3,
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0.22727273em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+}
+h4,
+.h4 {
+  margin-top: 0;
+  margin-bottom: 0.27777778em;
+  font-size: 1.125em;
+  font-family: &quot;AvenirNextLTW01-Medium&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+}
+.lt-ie9 h4,
+.lt-ie9 .h4 {
+  font-weight: normal !important;
+}
+h5,
+h6,
+.h5,
+.h6 {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.lt-ie9 h5,
+.lt-ie9 h6,
+.lt-ie9 .h5,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+}
+h5,
+.h5 {
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+h6,
+.h6 {
+  margin-top: 0;
+  margin-bottom: 0.41666667em;
+  font-size: 0.75em;
+  line-height: 1.83333333;
+}
+.superheader {
+  margin-bottom: 0.1875em;
+  font-size: 3em;
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.375;
+}
+.lt-ie9 .superheader {
+  font-weight: normal !important;
 }</code></pre>
       </div>
     </div>
@@ -449,6 +633,157 @@ nav a {
   blockquote {
     margin: 1.75em 2.5em;
   }
+}</code></pre>
+      </div>
+    </div>
+    <div id="pull-quote" class="docs-component">
+      <h2 class="docs-component_header"><span>Pull quote</span></h2>
+      <div class="docs-patterns">
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Default pull quote</h3>
+          <section class="docs-pattern_pattern">
+<aside class="pull-quote">
+    <div class="pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </div>
+    <footer>
+        <cite class="pull-quote_citation">
+            - Author Name
+        </cite>
+    <footer>
+</aside>
+
+          </section>
+          <footer class="docs-pattern_footer">
+            <pre class="docs-code docs-pattern_markup"><code data-language="html">&lt;aside class=&quot;pull-quote&quot;&gt;
+    &lt;div class=&quot;pull-quote_body&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    &lt;/div&gt;
+    &lt;footer&gt;
+        &lt;cite class=&quot;pull-quote_citation&quot;&gt;
+            - Author Name
+        &lt;/cite&gt;
+    &lt;footer&gt;
+&lt;/aside&gt;</code></pre>
+            <ul class="docs-notes">
+              <li>Use a pull quote to highlight excerpts from the current work. This is not to be confused with blockquote which quotes from an external work.</li>
+              <li>Since a pull quote is an excerpt and repeats content from the article it's contained within you should use the aside element.</li>
+            </ul>
+          </footer>
+        </div>
+        <div class="docs-pattern">
+          <h3 class="docs-pattern_header">Large pull quote</h3>
+          <section class="docs-pattern_pattern">
+<aside class="pull-quote pull-quote__large">
+    <div class="pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </div>
+    <footer>
+        <cite class="pull-quote_citation">
+            - Author Name
+        </cite>
+    <footer>
+</aside>
+
+          </section>
+          <footer class="docs-pattern_footer">
+            <pre class="docs-code docs-pattern_markup"><code data-language="html">&lt;aside class=&quot;pull-quote pull-quote__large&quot;&gt;
+    &lt;div class=&quot;pull-quote_body&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    &lt;/div&gt;
+    &lt;footer&gt;
+        &lt;cite class=&quot;pull-quote_citation&quot;&gt;
+            - Author Name
+        &lt;/cite&gt;
+    &lt;footer&gt;
+&lt;/aside&gt;</code></pre>
+          </footer>
+        </div>
+      </div>
+      <div class="docs-css">
+        <pre class="docs-code"><code data-language="css">.pull-quote_body {
+  font-family: &quot;AvenirNextLTW01-Regular&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.22727273em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+  margin-bottom: 0.54545455em;
+  color: #101820;
+}
+.pull-quote_body em,
+.pull-quote_body i {
+  font-family: &quot;AvenirNextLTW01-Italic&quot;, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .pull-quote_body em,
+.lt-ie9 .pull-quote_body i {
+  font-style: normal !important;
+}
+.pull-quote_body strong,
+.pull-quote_body b {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .pull-quote_body strong,
+.lt-ie9 .pull-quote_body b {
+  font-weight: normal !important;
+}
+.pull-quote_citation {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+  color: #75787b;
+}
+.lt-ie9 .pull-quote_citation {
+  font-weight: normal !important;
+}
+.pull-quote__large .pull-quote_body {
+  font-family: &quot;AvenirNextLTW01-Regular&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.30769231em;
+  font-size: 1.625em;
+  line-height: 1.26923077;
+  margin-bottom: 0.69230769em;
+}
+.pull-quote__large .pull-quote_body em,
+.pull-quote__large .pull-quote_body i {
+  font-family: &quot;AvenirNextLTW01-Italic&quot;, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 .pull-quote__large .pull-quote_body em,
+.lt-ie9 .pull-quote__large .pull-quote_body i {
+  font-style: normal !important;
+}
+.pull-quote__large .pull-quote_body strong,
+.pull-quote__large .pull-quote_body b {
+  font-family: &quot;AvenirNextLTW01-Demi&quot;, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 .pull-quote__large .pull-quote_body strong,
+.lt-ie9 .pull-quote__large .pull-quote_body b {
+  font-weight: normal !important;
 }</code></pre>
       </div>
     </div>

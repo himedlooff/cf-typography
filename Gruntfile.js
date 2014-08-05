@@ -116,8 +116,10 @@ module.exports = function(grunt) {
   function dynamicTopdocTasks() {
     var topdoc = {};
     var subtasks = [
+      'core',
       'base',
-      'typography'
+      'vars',
+      'utilities'
     ];
     for (var i = 0; i < subtasks.length; i++) {
       var key = subtasks[i];

@@ -381,6 +381,98 @@
    Capital Framework
    Base styles
    ========================================================================== */
+/*
+ * Source: http://fast.fonts.net/cssapi/44e8c964-4684-44c6-a6e3-3f3da8787b50.css
+ * This file has been edited to use absolute URLS so we can concatenate it with
+ * all of our other styles.
+ */
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/1e9892c0-6927-4412-9874-1b82801ba47a.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/52a192b1-bea5-4b48-879f-107f009b666f.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Italic";
+  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Medium";
+  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/f26faddb-86cc-4477-a253-1e1287684336.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "AvenirNextLTW01-Demi";
+  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
+  src: url("//fast.fonts.net/dv2/3/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/99affa9a-a5e9-4559-bd07-20cf0071852d.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+/* topdoc
+  name: Webfonts
+  family: cf-base
+  patterns:
+    - name: Licensed webfonts
+      notes:
+        - "Avenir Next is included via the licensed-fonts.css file.
+          This file contains absolute links to our paid font service.
+          Fonts included this way will only work on CFPB-registered domains."
+        - "Note that when using Avenir Regular we automatically fix faux italic
+          and bold issues by overriding i, em, b, and strong tags to use the
+          appropriate fonts."
+    - name: Webfont mixins
+      codenotes:
+        - ".webfont-regular()"
+        - ".webfont-italic()"
+        - ".webfont-medium()"
+        - ".webfont-demi()"
+      notes:
+        - "Use these mixins to easily add the Avenir Next font family to your
+          elements."
+        - "To avoid faux bold and italics in Avenir Next, you must use the font
+          family name for that particular style. So when defining an italic or
+          bold style in Avenir Next you need to use the Avenir Next Italic font
+          family. Use the mixins when setting bold or italic text as they also
+          set the appropriate font-weight and font-style."
+        - "These mixins also add the appropriate .lt-ie9 overrides.
+          .lt-ie9 overrides are necessary to override font-style and font-weight
+          each time the webfont is used. These overrides are built into the webfont
+          mixins so you get them automatically. Note that this requires you to
+          use conditional classes on the <html> element:
+          https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes."
+  tags:
+    - cf-base
+*/
 /* topdoc
   name: Type hierarchy
   family: cf-base
@@ -424,6 +516,152 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 100%;
   line-height: 1.375;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1 em,
+.h1 em,
+h2 em,
+.h2 em,
+h3 em,
+.h3 em,
+h1 i,
+.h1 i,
+h2 i,
+.h2 i,
+h3 i,
+.h3 i {
+  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.lt-ie9 h1 em,
+.lt-ie9 .h1 em,
+.lt-ie9 h2 em,
+.lt-ie9 .h2 em,
+.lt-ie9 h3 em,
+.lt-ie9 .h3 em,
+.lt-ie9 h1 i,
+.lt-ie9 .h1 i,
+.lt-ie9 h2 i,
+.lt-ie9 .h2 i,
+.lt-ie9 h3 i,
+.lt-ie9 .h3 i {
+  font-style: normal !important;
+}
+h1 strong,
+.h1 strong,
+h2 strong,
+.h2 strong,
+h3 strong,
+.h3 strong,
+h1 b,
+.h1 b,
+h2 b,
+.h2 b,
+h3 b,
+.h3 b {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+.lt-ie9 h1 strong,
+.lt-ie9 .h1 strong,
+.lt-ie9 h2 strong,
+.lt-ie9 .h2 strong,
+.lt-ie9 h3 strong,
+.lt-ie9 .h3 strong,
+.lt-ie9 h1 b,
+.lt-ie9 .h1 b,
+.lt-ie9 h2 b,
+.lt-ie9 .h2 b,
+.lt-ie9 h3 b,
+.lt-ie9 .h3 b {
+  font-weight: normal !important;
+}
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.47058824em;
+  font-size: 2.125em;
+  line-height: 1.29411765;
+}
+h2,
+.h2 {
+  margin-top: 0;
+  margin-bottom: 0.30769231em;
+  font-size: 1.625em;
+  line-height: 1.26923077;
+}
+h3,
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0.22727273em;
+  font-size: 1.375em;
+  line-height: 1.27272727;
+}
+h4,
+.h4 {
+  margin-top: 0;
+  margin-bottom: 0.27777778em;
+  font-size: 1.125em;
+  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.22222222;
+}
+.lt-ie9 h4,
+.lt-ie9 .h4 {
+  font-weight: normal !important;
+}
+h5,
+h6,
+.h5,
+.h6 {
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.lt-ie9 h5,
+.lt-ie9 h6,
+.lt-ie9 .h5,
+.lt-ie9 .h6 {
+  font-weight: normal !important;
+}
+h5,
+.h5 {
+  margin-top: 0;
+  margin-bottom: 0.35714286em;
+  font-size: 0.875em;
+  line-height: 1.57142857;
+}
+h6,
+.h6 {
+  margin-top: 0;
+  margin-bottom: 0.41666667em;
+  font-size: 0.75em;
+  line-height: 1.83333333;
+}
+.superheader {
+  margin-bottom: 0.1875em;
+  font-size: 3em;
+  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.375;
+}
+.lt-ie9 .superheader {
+  font-weight: normal !important;
 }
 /* topdoc
   name: Margins
@@ -624,265 +862,8 @@ blockquote {
   }
 }
 /* topdoc
-  name: EOF
-  eof: true
-*/
-/* ==========================================================================
-   Capital Framework
-   Typographic mixins and patterns
-   ========================================================================== */
-/*
- * Source: http://fast.fonts.net/cssapi/44e8c964-4684-44c6-a6e3-3f3da8787b50.css
- * This file has been edited to use absolute URLS so we can concatenate it with
- * all of our other styles.
- */
-@font-face {
-  font-family: "AvenirNextLTW01-Regular";
-  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Regular";
-  src: url("//fast.fonts.net/dv2/2/e9167238-3b3f-4813-a04a-a384394eed42.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
-  src: url("//fast.fonts.net/dv2/3/1e9892c0-6927-4412-9874-1b82801ba47a.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/52a192b1-bea5-4b48-879f-107f009b666f.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Italic";
-  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Italic";
-  src: url("//fast.fonts.net/dv2/2/d1fddef1-d940-4904-8f6c-17e809462301.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
-  src: url("//fast.fonts.net/dv2/3/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
-  font-style: italic;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Medium";
-  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Medium";
-  src: url("//fast.fonts.net/dv2/2/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
-  src: url("//fast.fonts.net/dv2/3/f26faddb-86cc-4477-a253-1e1287684336.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Demi";
-  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("eot");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "AvenirNextLTW01-Demi";
-  src: url("//fast.fonts.net/dv2/2/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50");
-  src: url("//fast.fonts.net/dv2/3/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("woff"), url("//fast.fonts.net/dv2/1/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50") format("truetype"), url("//fast.fonts.net/dv2/11/99affa9a-a5e9-4559-bd07-20cf0071852d.svg?d44f19a684109620e4841679af90e818b934c450213fb296d217dd76fbd8133e8104ffce1b8d7381e92baf075aac747ded01b441045f936c159eb0f46c11e1f99e958a3e0d6904164b21814766132f7cb38b46df85fb387875d6907338f619856e049c29c288424547a2ca329b1d0251faf8c505bae9c3ec3d5a1e4327f5fdf46ffb088d97582c65a45857e1e0662c2d545166a03c7b024ca17ac3839d703086c5f9fd694b6f5493360c3bcd9d5d427b599ea7651d27005ca2f4c1d0312515f51a323f79b7f5cf1afa2ab67a3ddbfee1&projectId=44e8c964-4684-44c6-a6e3-3f3da8787b50#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
-  font-style: normal;
-  font-weight: 700;
-}
-/* topdoc
-  name: Webfonts
-  family: cf-typography
-  patterns:
-    - name: Licensed webfonts
-      notes:
-        - "Avenir Next is included via the licensed-fonts.css file.
-          This file contains absolute links to our paid font service.
-          Fonts included this way will only work on CFPB-registered domains."
-        - "Note that when using Avenir Regular we automatically fix faux italic
-          and bold issues by overriding i, em, b, and strong tags to use the
-          appropriate fonts."
-    - name: Webfont mixins
-      codenotes:
-        - ".webfont-regular()"
-        - ".webfont-italic()"
-        - ".webfont-medium()"
-        - ".webfont-demi()"
-      notes:
-        - "Use these mixins to easily add the Avenir Next font family to your
-          elements."
-        - "To avoid faux bold and italics in Avenir Next, you must use the font
-          family name for that particular style. So when defining an italic or
-          bold style in Avenir Next you need to use the Avenir Next Italic font
-          family. Use the mixins when setting bold or italic text as they also
-          set the appropriate font-weight and font-style."
-        - "These mixins also add the appropriate .lt-ie9 overrides.
-          .lt-ie9 overrides are necessary to override font-style and font-weight
-          each time the webfont is used. These overrides are built into the webfont
-          mixins so you get them automatically. Note that this requires you to
-          use conditional classes on the <html> element:
-          https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes."
-  tags:
-    - cf-typography
-*/
-/* topdoc
-  name: Type hierarchy
-  family: cf-typography
-  patterns:
-    - name: Default body type
-      markup: |
-        <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod <strong>tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    - name: Heading level 1
-      markup: |
-        <h1>Example heading element</h1>
-        <p class="h1">A non-heading element</p>
-    - name: Heading level 2
-      markup: |
-        <h2>Example heading element</h2>
-        <p class="h2">A non-heading element</p>
-    - name: Heading level 3
-      markup: |
-        <h3>Example heading element</h3>
-        <p class="h3">A non-heading element</p>
-    - name: Heading level 4
-      markup: |
-        <h4>Example heading element</h4>
-        <p class="h4">A non-heading element</p>
-    - name: Heading level 5
-      markup: |
-        <h5>Example heading element</h5>
-        <p class="h5">A non-heading element</p>
-    - name: Heading level 6
-      markup: |
-        <h6>Example heading element</h6>
-        <p class="h6">A non-heading element</p>
-    - name: Super header
-      markup: |
-        <h1 class="superheader">Example super heading</h1>
-        <p class="superheader">Example super heading</p>
-  tags:
-    - cf-typography
-*/
-.h1,
-.h2,
-.h3,
-h1,
-h2,
-h3 {
-  font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-.h1 em,
-.h2 em,
-.h3 em,
-.h1 i,
-.h2 i,
-.h3 i {
-  font-family: "AvenirNextLTW01-Italic", Arial, sans-serif;
-  font-style: italic;
-  font-weight: normal;
-}
-.lt-ie9 .h1 em,
-.lt-ie9 .h2 em,
-.lt-ie9 .h3 em,
-.lt-ie9 .h1 i,
-.lt-ie9 .h2 i,
-.lt-ie9 .h3 i {
-  font-style: normal !important;
-}
-.h1 strong,
-.h2 strong,
-.h3 strong,
-.h1 b,
-.h2 b,
-.h3 b {
-  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-}
-.lt-ie9 .h1 strong,
-.lt-ie9 .h2 strong,
-.lt-ie9 .h3 strong,
-.lt-ie9 .h1 b,
-.lt-ie9 .h2 b,
-.lt-ie9 .h3 b {
-  font-weight: normal !important;
-}
-.h1,
-h1 {
-  margin-top: 0;
-  margin-bottom: 0.47058824em;
-  font-size: 2.125em;
-  line-height: 1.29411765;
-}
-.h2,
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.30769231em;
-  font-size: 1.625em;
-  line-height: 1.26923077;
-}
-.h3,
-h3 {
-  margin-top: 0;
-  margin-bottom: 0.22727273em;
-  font-size: 1.375em;
-  line-height: 1.27272727;
-}
-.h4,
-h4 {
-  margin-top: 0;
-  margin-bottom: 0.27777778em;
-  font-size: 1.125em;
-  font-family: "AvenirNextLTW01-Medium", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.22222222;
-}
-.lt-ie9 .h4 {
-  font-weight: normal !important;
-}
-.h5,
-.h6,
-h5,
-h6 {
-  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.lt-ie9 .h5,
-.lt-ie9 .h6 {
-  font-weight: normal !important;
-}
-.h5,
-h5 {
-  margin-top: 0;
-  margin-bottom: 0.35714286em;
-  font-size: 0.875em;
-  line-height: 1.57142857;
-}
-.h6,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0.41666667em;
-  font-size: 0.75em;
-  line-height: 1.83333333;
-}
-.superheader {
-  margin-bottom: 0.1875em;
-  font-size: 3em;
-  font-family: "AvenirNextLTW01-Demi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1.375;
-}
-.lt-ie9 .superheader {
-  font-weight: normal !important;
-}
-/* topdoc
   name: Pull quote
-  family: cf-typography
+  family: cf-base
   patterns:
     - name: Default pull quote
       markup: |
@@ -919,7 +900,7 @@ h6 {
             <footer>
         </aside>
   tags:
-    - cf-typography
+    - cf-base
 */
 .pull-quote_body {
   font-family: "AvenirNextLTW01-Regular", Arial, sans-serif;
@@ -1002,7 +983,41 @@ h6 {
   eof: true
 */
 /* topdoc
+  name: Table of contents
+  family: cf-core
+  patterns:
+    - markup: |
+        <ul class="docs-pattern_toc-list">
+            <li class="docs-pattern_header">
+                <a href="../vars/">Variables</a>
+            </li>
+            <li class="docs-pattern_header">
+                <a href="../utilities/">Utilities</a>
+            </li>
+            <li class="docs-pattern_header">
+                <a href="../base/">Base styles</a>
+            </li>
+        </ul>
+        <style>
+            .docs-pattern_header {
+                border-radius: 3px;
+            }
+            .docs-pattern_pattern {
+                padding: 0;
+                border: 0;
+            }
+            .docs-pattern_footer {
+                display: none !important;
+            }
+            .docs-pattern_toc-list {
+                padding: 0;
+            }
+        </style>
+  tags:
+    - cf-core
+*/
+/* topdoc
   name: EOF
   eof: true
 */
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jZi11dGlsaXRpZXMubGVzcyIsInNyYy9jZi1iYXNlLmxlc3MiLCJzcmMvbGljZW5zZWQtZm9udHMuY3NzIiwic3JjL2NmLXR5cG9ncmFwaHkubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTBCSSxXQUFDO0VBQ0csU0FBUyxFQUFUO0VBQ0EsY0FBQTtFQUNBLFdBQUE7O0FBRUosT0FBUTtFQUNKLE9BQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUEwQlI7RUFDRSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsTUFBTSxhQUFOO0VBQ0EsV0FBQTtFQUFhLFVBQUE7RUFDYixZQUFBO0VBQWMsVUFBQTtFQUFZLFNBQUE7Ozs7Ozs7Ozs7Ozs7O0FBaUI1QjtFQUNJLHFCQUFBOztBQUNBLE9BQVE7RUFFSixlQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQXdCUjtFQUNJLFlBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW1ISjtFQUxJLGtCQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBOztBQU9KO0VBQ0ksa0JBQUE7RUFDQSxNQUFBO0VBQ0EsT0FBQTtFQUNBLFdBQUE7RUFDQSxZQUFBOztBQUdKO0VBakJJLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQ2hMSjtFQUNJLGNBQUE7RUFDQSxzQkFBc0Is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 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9jZi11dGlsaXRpZXMubGVzcyIsInNyYy9saWNlbnNlZC1mb250cy5jc3MiLCJzcmMvY2YtYmFzZS5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBMEJJLFdBQUM7RUFDRyxTQUFTLEVBQVQ7RUFDQSxjQUFBO0VBQ0EsV0FBQTs7QUFFSixPQUFRO0VBQ0osT0FBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTBCUjtFQUNFLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxNQUFNLGFBQU47RUFDQSxXQUFBO0VBQWEsVUFBQTtFQUNiLFlBQUE7RUFBYyxVQUFBO0VBQVksU0FBQTs7Ozs7Ozs7Ozs7Ozs7QUFpQjVCO0VBQ0kscUJBQUE7O0FBQ0EsT0FBUTtFQUVKLGVBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBd0JSO0VBQ0ksWUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbUhKO0VBTEksa0JBQUE7RUFDQSxzQkFBQTtFQUNBLFNBQUE7O0FBT0o7RUFDSSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7O0FBR0o7RUFqQkksa0JBQUE7RUFDQSxtQkFBQTtFQUNBLFNBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FDdk5KO0VBQ0ksYUFBYSx5QkFBYjtFQUNBLFNBQVMsbWhCQUFtaEIsT0FBTyxNQUFuaUI7RUFDQSxrQkFBQTtFQUNBLG1CQUFBOztBQUVKO0VBQ0ks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 */
