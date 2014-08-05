@@ -36,6 +36,90 @@
             </li>
           </ul>
         </li>
+        <li id="media-query-mixins" class="demo-component-list_item demo-wrapper">
+          <h1 class="demo-component-list_header">Media query mixins</h1>
+          <ul class="demo_notes">
+            <li>These mixins allow us to write consistent media queries using pixel values, which are easier to remember. The mixins handle converting the pixels into em's.</li>
+          </ul>
+          <ul class="demo-pattern-list">
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>min-width/max-width media queries</h3>
+                <ul class="demo_codenotes">
+                  <li>
+                    <pre class="code"><code>.respond-to-min(@bp, @rules)</code></pre>
+                  </li>
+                  <li>
+                    <pre class="code"><code>.respond-to-max(@bp, @rules)</code></pre>
+                  </li>
+                </ul>
+                <ul class="demo_notes">
+                  <li>@bp: the breakpoint size in pixels. It will get converted into em's.</li>
+                  <li>@rules: a CSS or Less ruleset. Note that it can contain the full set of Less features.</li>
+                </ul>
+              </header>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>min-width/max-width media query usage</h3>
+                <ul class="demo_codenotes">
+                  <li>
+                    <pre class="code"><code>.respond-to-min(768px, {
+    .title {
+        font-size: 2em;
+    }
+});
+
+Compiles to:
+
+@media only all and (min-width: 48em) {
+    .title {
+        font-size: 2em;
+    }
+}</code></pre>
+                  </li>
+                </ul>
+              </header>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>min-width/max-width media query range</h3>
+                <ul class="demo_codenotes">
+                  <li>
+                    <pre class="code"><code>.respond-to-range(@bp1, @bp2, @rules)</code></pre>
+                  </li>
+                </ul>
+                <ul class="demo_notes">
+                  <li>@bp1: the min-width breakpoint size in pixels. It will get converted into em's.</li>
+                  <li>@bp2: the max-width breakpoint size in pixels. It will get converted into em's.</li>
+                  <li>@rules: a CSS or Less ruleset. Note that it can contain the full set of Less features.</li>
+                </ul>
+              </header>
+            </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <h3>min-width/max-width media query range usage</h3>
+                <ul class="demo_codenotes">
+                  <li>
+                    <pre class="code"><code>.respond-to-range(320px, 768px, {
+    .title {
+        font-size: 2em;
+    }
+});
+
+Compiles to:
+
+@media only all and (min-width: 20em) and (max-width: 48em) {
+    .title {
+        font-size: 2em;
+    }
+}</code></pre>
+                  </li>
+                </ul>
+              </header>
+            </li>
+          </ul>
+        </li>
         <li id="clearfix" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Clearfix</h1>
           <ul class="demo-pattern-list">
@@ -472,90 +556,6 @@
                 </ul>
                 <ul class="demo_notes">
                   <li>Pass this mixin one color to color the child element when the parent link is hovered.</li>
-                </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-        <li id="media-query-mixins" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Media query mixins</h1>
-          <ul class="demo_notes">
-            <li>These mixins allow us to write consistent media queries using pixel values, which are easier to remember. The mixins handle converting the pixels into em's.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>min-width/max-width media queries</h3>
-                <ul class="demo_codenotes">
-                  <li>
-                    <pre class="code"><code>.u-respond-to-min(@bp, @rules)</code></pre>
-                  </li>
-                  <li>
-                    <pre class="code"><code>.u-respond-to-max(@bp, @rules)</code></pre>
-                  </li>
-                </ul>
-                <ul class="demo_notes">
-                  <li>@bp: the breakpoint size in pixels. It will get converted into em's.</li>
-                  <li>@rules: a CSS or Less ruleset. Note that it can contain the full set of Less features.</li>
-                </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>min-width/max-width media query usage</h3>
-                <ul class="demo_codenotes">
-                  <li>
-                    <pre class="code"><code>.u-respond-to-min(768px, {
-    .title {
-        font-size: 2em;
-    }
-});
-
-Compiles to:
-
-@media only all and (min-width: 48em) {
-    .title {
-        font-size: 2em;
-    }
-}</code></pre>
-                  </li>
-                </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>min-width/max-width media query range</h3>
-                <ul class="demo_codenotes">
-                  <li>
-                    <pre class="code"><code>.u-respond-to-range(@bp1, @bp2, @rules)</code></pre>
-                  </li>
-                </ul>
-                <ul class="demo_notes">
-                  <li>@bp1: the min-width breakpoint size in pixels. It will get converted into em's.</li>
-                  <li>@bp2: the max-width breakpoint size in pixels. It will get converted into em's.</li>
-                  <li>@rules: a CSS or Less ruleset. Note that it can contain the full set of Less features.</li>
-                </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>min-width/max-width media query range usage</h3>
-                <ul class="demo_codenotes">
-                  <li>
-                    <pre class="code"><code>.u-respond-to-range(320px, 768px, {
-    .title {
-        font-size: 2em;
-    }
-});
-
-Compiles to:
-
-@media only all and (min-width: 20em) and (max-width: 48em) {
-    .title {
-        font-size: 2em;
-    }
-}</code></pre>
-                  </li>
                 </ul>
               </header>
             </li>
