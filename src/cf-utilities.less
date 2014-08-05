@@ -6,7 +6,7 @@
 
 /* topdoc
   name: Clearfix
-  family: cf-utilities
+  family: cf-core
   patterns:
     - name: Utility class
       markup: |
@@ -20,7 +20,7 @@
            black box would spill into the markup section."
         - "More information: http://css-tricks.com/snippets/css/clear-fix/"
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-clearfix {
@@ -37,7 +37,7 @@
 
 /* topdoc
   name: Visually hidden
-  family: cf-utilities
+  family: cf-core
   patterns:
     - name: Utility class
       markup: |
@@ -53,7 +53,7 @@
         - "Use this class to hide something from view while keeping it
           accessible to screen readers."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-visually-hidden {
@@ -67,7 +67,7 @@
 
 /* topdoc
   name: Inline block
-  family: cf-utilities
+  family: cf-core
   patterns:
     - name: Utility class
       codenotes:
@@ -75,7 +75,7 @@
       notes:
         - "Also adds a .lt-ie8 class to hack inline-block for IE 7 and below."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-inline-block {
@@ -89,7 +89,7 @@
 
 /* topdoc
   name: Floating right
-  family: cf-utilities
+  family: cf-core
   patterns:
     - name: Utility class
       codenotes:
@@ -103,7 +103,7 @@
         - "2. Simply change the markup order so that the element floating right
           comes before the element to its left."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-right {
@@ -113,7 +113,7 @@
 
 /* topdoc
   name: Align with button
-  family: cf-utilities
+  family: cf-core
   patterns:
     - name: Utility class
       codenotes:
@@ -125,7 +125,7 @@
         - "Pass one argument to use a custom font size to calculate the top
           padding."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-align-with-btn(@font-size: @base-font-size-px) {
@@ -137,7 +137,7 @@
 
 /* topdoc
   name: Flexible proportional containers
-  family: cf-utilities
+  family: cf-core
   notes:
     - "Utilizes intrinsic ratios to create a flexible container that retains its
       aspect ratio. When image tags scale they retain their aspect ratio, but if
@@ -211,7 +211,7 @@
         - "Note that inline style usage is being used for demo purposes only.
           Please do not use inline styles."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-flexible-container-mixin(@width: 16, @height: 9) {
@@ -241,7 +241,7 @@
 
 /* topdoc
   name: Link mixins
-  family: cf-utilities
+  family: cf-core
   patterns:
     - codenotes:
         - .u-link__colors();
@@ -316,7 +316,7 @@
         - "Pass this mixin one color to color the child element when the parent
           link is hovered."
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-link__colors() {
@@ -410,7 +410,7 @@
 
 /* topdoc
   name: Media query mixins
-  family: cf-utilities
+  family: cf-core
   notes:
     - "These mixins allow us to write consistent media queries using pixel
       values, which are easier to remember. The mixins handle converting the
@@ -467,7 +467,7 @@
                 }
             }
   tags:
-    - cf-utilities
+    - cf-core
 */
 
 .u-respond-to-min(@bp, @rules) {

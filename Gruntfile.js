@@ -58,6 +58,22 @@ module.exports = function(grunt) {
       // We'll be inserting it at the top of minified assets.
       banner: grunt.file.read('./node_modules/cf-grunt-config/cfpb-banner.txt'),
     },
+
+    // Define tasks specific to this project here
+    less: {
+      core: {
+        options: {
+          paths: grunt.file.expand('src/**'),
+          sourceMap: true
+        },
+        files: {
+          'demo/static/css/main.css': [
+            'src/cf-core.less'
+          ]
+        }
+      }
+    },
+
   };
 
 
@@ -85,62 +101,7 @@ module.exports = function(grunt) {
    * loadConfig function with the given path, which is where our external
    * task options get installed by npm.
    */
-  config = extend(loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
-
-  config.concat = { main:{} };
-
-  config.less = {
-    main: {
-      options: {
-        paths: grunt.file.expand('src/**'),
-        sourceMap: true
-      },
-      files: {
-        'docs/static/css/main.css': [
-          'src/cf-core.less'
-        ]
-      }
-    }
-  };
-
-
-  /**
-   * Creates a dynamic topdoc options object.
-   * To add more subtasks add an item to the subtasks array.
-   * For example if you created a new component with the family name of
-   * "my-component" then you could add a new item to the subtasks array called
-   * "my-component" and this function would automatically add a new topdoc
-   * subtask to the topdoc task. You could then run `grunt topdoc:my-component`
-   * to build it out separately or just `grunt topdoc` to run all topdoc tasks.
-   */
-  function dynamicTopdocTasks() {
-    var topdoc = {};
-    var subtasks = [
-      'core',
-      'base',
-      'vars',
-      'utilities'
-    ];
-    for (var i = 0; i < subtasks.length; i++) {
-      var key = subtasks[i];
-      topdoc[key] = {
-        options: {
-          source: 'docs/static/css/',
-          destination: 'docs/' + key + '/',
-          template: 'node_modules/cf-component-demo/docs/',
-          templateData: {
-            family: 'cf-' + key,
-            description: key + ' for cfgov-refresh.',
-            title: 'cf-core / ' + key + ' docs',
-            repo: '<%= pkg.homepage %>'
-          }
-        }
-      };
-    }
-    return topdoc;
-  }
-
-  config.topdoc = dynamicTopdocTasks();
+  config = extend(true, loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
 
   grunt.initConfig(config);
 
@@ -154,7 +115,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets', 'concat:main']);
-  grunt.registerTask('default', ['concat:main', 'less', 'autoprefixer', 'copy:docs', 'topdoc']);
+  grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets']);
+  grunt.registerTask('default', ['less:core', 'autoprefixer', 'copy:docs', 'topdoc']);
 
 };
